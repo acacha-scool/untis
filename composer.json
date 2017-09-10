@@ -1,12 +1,13 @@
 {
-    "name": "scool/untis/untis",
+    "name": "scool/untis",
     "type": "library",
     "description": "A Laravel package for Untis software",
     "keywords": [
-        "scool/untis",
+        "scool",
+        "untis",
         "untis"
     ],
-    "homepage": "https://github.com/scool/untis/untis",
+    "homepage": "https://github.com/scool/untis",
     "license": "MIT",
     "authors": [
         {
@@ -41,6 +42,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Scool\\Untis\\Providers\\UntisServiceProvider"
+            ],
+            "aliases": {
+                "ScoolStaff": "Scool\\Untis\\Untis"
+            }
         }
     },
     "config": {
