@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Skeleton;
+namespace Scool\Untis;
 
 class ExampleTest extends \PHPUnit\Framework\TestCase
 {
