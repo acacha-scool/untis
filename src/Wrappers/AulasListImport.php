@@ -5,9 +5,9 @@ namespace Scool\Untis\Wrappers;
 use Maatwebsite\Excel\Files\ExcelFile;
 
 /**
- * Class HorariosListImport.
+ * Class AulasListImport.
  */
-class HorariosListImport extends ExcelFile
+class AulasListImport extends ExcelFile
 {
 
     /**
@@ -32,6 +32,6 @@ class HorariosListImport extends ExcelFile
      */
     public function getFile()
     {
-        return storage_path('untis/GPU001.TXT');
+        return storage_path('untis/GPU005.TXT');
     }
 }
