@@ -18,8 +18,8 @@ class CreateAulasTable extends Migration
     {
         Schema::create('aulas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code');
-            $table->string('name');
+            $table->string('codigo')->unique();
+            $table->string('nombre');
             $table->timestamps();
         });
     }

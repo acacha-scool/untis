@@ -18,9 +18,12 @@ class CreateMateriasTable extends Migration
     {
         Schema::create('materias', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code');
-            $table->string('name');
-            $table->integer('aula_id')->unsigned();
+            $table->string('codigo')->unique();
+            $table->string('nombre');
+            $table->string('nombre_corto')->nullable();
+            $table->string('codigo_estudio')->nullable();
+            $table->string('estudio')->nullable();
+            $table->integer('aula_id')->unsigned()->nullable();
 
             $table->foreign('aula_id')->references('id')->on('aulas');
             $table->timestamps();

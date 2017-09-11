@@ -16,5 +16,13 @@ class Grupo extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','code'];
+    protected $fillable = ['codigo','nombre','aula_id'];
+
+    /**
+     * Get the grupo aula.
+     */
+    public function aula()
+    {
+        return $this->belongsTo(Aula::class);
+    }
 }

@@ -11,5 +11,17 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Profesor extends Model
 {
-    //
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['codigo','nombre','departamento','cargo'];
+
+    /**
+     * Table name.
+     *
+     * @var array
+     */
+    protected $table = "profesores";
 }

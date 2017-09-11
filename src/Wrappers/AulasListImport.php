@@ -11,6 +11,11 @@ class AulasListImport extends ExcelFile
 {
 
     /**
+     * @var null
+     */
+    protected $encoding = 'ISO-8859-1';
+
+    /**
      * @var string
      */
     protected $delimiter  = ',';

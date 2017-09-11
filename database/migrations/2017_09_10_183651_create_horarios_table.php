@@ -22,7 +22,7 @@ class CreateHorariosTable extends Migration
             $table->integer('grupo_id')->unsigned();
             $table->integer('profesor_id')->unsigned();
             $table->integer('materia_id')->unsigned();
-            $table->integer('aula_id')->unsigned();
+            $table->integer('aula_id')->unsigned()->nullable();
             $table->unsignedTinyInteger('dia');
             $table->unsignedTinyInteger('hora');
 
