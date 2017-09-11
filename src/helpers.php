@@ -48,6 +48,14 @@ if (! function_exists('seed_horarios')) {
     }
 }
 
+if (! function_exists('seed_new')) {
+    function seed_new()
+    {
+        //TODO
+        dump('nothing');
+    }
+}
+
 if (! function_exists('seed_untis')) {
     function seed_untis() {
         seed_grupos();
