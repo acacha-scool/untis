@@ -18,6 +18,13 @@ class CreateGruposTable extends Migration
     {
         Schema::create('grupos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code');
+            $table->integer('grupo_id')->unsigned();
+            $table->integer('aula_id')->unsigned();
+
+            $table->foreign('grupo_id')->references('id')->on('grupos');
+            $table->foreign('aula_id')->references('id')->on('aulas');
+
             $table->timestamps();
         });
     }
