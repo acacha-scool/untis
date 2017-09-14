@@ -22,7 +22,7 @@ class CreateProfesoresTable extends Migration
             $table->string('nombre')->nullable();
             $table->string('departamento')->nullable();
             $table->string('cargo')->nullable();
-
+            $table->string('especialidad')->nullable();
             $table->timestamps();
         });
     }

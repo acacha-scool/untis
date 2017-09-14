@@ -124,7 +124,8 @@ if (! function_exists('first_or_create_profesor')) {
                 'codigo' => $row->codigo,
                 'nombre' => $row->nombre,
                 'departamento' => $row->departamento,
-                'cargo' => $row->cargo
+                'cargo' => $row->cargo,
+                'especialidad' => $row->especialidad
             ]);
             return $profesor;
         } catch (Illuminate\Database\QueryException $e) {
