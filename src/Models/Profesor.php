@@ -31,4 +31,12 @@ class Profesor extends Model
      * @var array
      */
     protected $table = "profesores";
+
+    /**
+     * Get the horarios for the profesor.
+     */
+    public function horarios()
+    {
+        return $this->hasMany(Horario::class);
+    }
 }
