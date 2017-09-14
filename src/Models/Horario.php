@@ -12,6 +12,13 @@ use Illuminate\Database\Eloquent\Model;
 class Horario extends Model
 {
     /**
+     * Database connection name.
+     *
+     * @var string
+     */
+    protected $connection = 'untis';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array

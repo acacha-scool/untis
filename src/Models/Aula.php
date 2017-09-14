@@ -11,6 +11,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Aula extends Model
 {
+
+    /**
+     * Database connection name.
+     *
+     * @var string
+     */
+    protected $connection = 'untis';
+
     /**
      * The attributes that are mass assignable.
      *
